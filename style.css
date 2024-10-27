@@ -1,0 +1,108 @@
+body {
+    font-family: 'Lora', serif;
+    color: #575F7D;
+    background: 
+        linear-gradient(45deg, #F7883F 50%, transparent 50%),
+        linear-gradient(-45deg, #F79E7E 50%, transparent 50%),
+        linear-gradient(135deg, #b56576 50%, transparent 50%),
+        linear-gradient(-135deg, #eaac8b 50%, transparent 50%);
+    background-size: 100%;
+    background-blend-mode: screen;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Lora', serif;
+    color: #00A36C;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 30px; 
+    margin: 10px 0;
+}
+
+h1 {
+    font-family: 'Arial', serif;
+    color: #6082B6;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none; 
+    color: #6B72E1;
+    transition: color 0.3s ease; 
+    font-weight: bold; 
+}
+
+
+.list-inline a:hover {
+    color: black;
+    text-decoration: underline; 
+}
+
+.container {
+    padding: 40px; 
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-white {
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0;
+    padding: 40px;
+    text-align: center; 
+}
+
+.list-inline {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.list-inline li {
+    margin: 0 10px;
+}
+.btn-blue {
+    background-color: #6B72E1; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    text-decoration: none; 
+}
+
+.btn-blue:hover {
+    background-color: #6B72E1;
+    box-shadow: 0 0 20px rgba(107, 114, 225, 0.7);
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+}
